@@ -40,7 +40,14 @@ public class Ponto3D extends Ponto2D {
     }
     public Ponto3D somaPonto(double dx, double dy, double dz){
 
-        return new Ponto3D( dx + this.getX() , this.getY() + dy, this.z += dz );//this.getZ() + dz seria o correcto
+        // not correct
+        /*return new Ponto3D( dx + this.getX() , this.getY() + dy, this.z += dz );//this.getZ() + dz seria o correcto*/
+
+        // correct
+        Ponto3D ponto3D = new Ponto3D(this.getX(), this.getY(),z +=dz);
+        return ponto3D;
+
+       // return new Ponto3D (this.getX() += dx, this.getY() += dy, this.z += dz );//this.getZ() + dz seria o correcto
     }
 
 

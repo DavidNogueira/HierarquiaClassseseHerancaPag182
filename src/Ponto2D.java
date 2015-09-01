@@ -43,7 +43,9 @@ public class Ponto2D {
 
     public Ponto2D somaPonto(double dx, double dy) {
 
-        return new Ponto2D(x + dx, y + dy);
+//        return new Ponto2D(x + dx, y + dy); // here was the mistake !
+        return new Ponto2D(x += dx, y += dy); // correct !
+
     }
 
     public String toString() {
