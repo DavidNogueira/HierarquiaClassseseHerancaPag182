@@ -44,7 +44,7 @@ public class Ponto3D extends Ponto2D {
         /*return new Ponto3D( dx + this.getX() , this.getY() + dy, this.z += dz );//this.getZ() + dz seria o correcto*/
 
         // correct
-        Ponto3D ponto3D = new Ponto3D(this.getX(), this.getY(),z +=dz);
+        Ponto3D ponto3D = new Ponto3D(this.getX() + dx, this.getY() + dy,z +=dz);
         return ponto3D;
 
        // return new Ponto3D (this.getX() += dx, this.getY() += dy, this.z += dz );//this.getZ() + dz seria o correcto

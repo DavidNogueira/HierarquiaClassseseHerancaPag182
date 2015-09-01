@@ -24,5 +24,15 @@ public class Main {
         ponto3D.somaPonto(point3D_to_add);
         System.out.println("point 3D: " + ponto3D.getX() + " | " + ponto3D.getY() + " | " + ponto3D.getZ());
 
+        System.out.println("---------------");
+        Ponto3D ponto3D_new = new Ponto3D(5,5,5);
+        System.out.println("point 3D new :" + ponto3D_new.getX() + " | " + ponto3D_new.getY() + " | " + ponto3D_new.getZ());
+        Ponto3D ponto3D_res= ponto3D_new.somaPonto(15,15,15);
+
+        System.out.println("result motherfucker:");
+        System.out.println("point 3D: " + ponto3D_res.getX() + " | " + ponto3D_res.getY() + " | " + ponto3D_res.getZ());
+
+
+
     }
 }
